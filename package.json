@@ -52,7 +52,7 @@
     "test": "node --harmony ./node_modules/.bin/gulp test",
     "bundle": "node ./node_modules/.bin/gulp bundle"
   },
-  "main": "./dist/csp.js",
+  "main": "./build/csp.bundled.browser.js",
   "files": [
     "src",
     "README.md",
