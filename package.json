@@ -54,7 +54,7 @@
     "test": "node --harmony ./node_modules/.bin/gulp test",
     "bundle": "node ./node_modules/.bin/gulp bundle"
   },
-  "main": "./built/csp.bundled.browser.js",
+  "main": "./dist/csp.bundled.browser.js",
   "files": [
     "src",
     "README.md",
