@@ -22,7 +22,7 @@ gulp.task("bundle:browser", function() {
     .require("./src/csp.js", {expose: "csp"})
     .bundle()
     .pipe(source("csp.bundled.browser.js"))
-    .pipe(gulp.dest("./build/"));
+    .pipe(gulp.dest("./dist/"));
 });
 
 gulp.task("bundle:node", function() {
@@ -32,7 +32,7 @@ gulp.task("bundle:node", function() {
     .require("./src/csp.js", {expose: "csp"})
     .bundle()
     .pipe(source("csp.bundled.node.js"))
-    .pipe(gulp.dest("./build/"));
+    .pipe(gulp.dest("./dist/"));
 });
 
 gulp.task("bundle", ["bundle:node", "bundle:browser"]);
