@@ -30,11 +30,13 @@
     "url": "https://github.com/ubolonton/js-csp/issues"
   },
   "dependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-runtime": "^6.11.6"
   },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.13.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-runtime": "^6.12.0",
     "babelify": "^7.3.0",
     "browserify": "^6.0.2",
