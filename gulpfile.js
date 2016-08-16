@@ -2,6 +2,7 @@ var gulp = require("gulp");
 var mocha = require("gulp-mocha");
 var browserify = require("browserify");
 var source = require('vinyl-source-stream');
+var babelify = require('babelify');
 
 gulp.task("dev:test", function() {
   return gulp.src("test/*.js", {read: false})
@@ -16,6 +17,7 @@ gulp.task("dev:watch", function() {
 
 gulp.task("bundle:browser", function() {
   return browserify({
+    transform: ['babelify']
   })
     .require("./src/csp.js", {expose: "csp"})
     .bundle()

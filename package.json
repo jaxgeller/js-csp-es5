@@ -3,9 +3,18 @@
   "version": "0.5.0",
   "description": "CSP channels with ES6 generators, inspired by Clojurescript's core.async and Go",
   "keywords": [
-    "csp", "async", "concurrency", "channel",
-    "go", "clojure", "clojurescript", "core.async",
-    "es6", "generators", "yield", "coroutines"
+    "csp",
+    "async",
+    "concurrency",
+    "channel",
+    "go",
+    "clojure",
+    "clojurescript",
+    "core.async",
+    "es6",
+    "generators",
+    "yield",
+    "coroutines"
   ],
   "author": "Nguyễn Tuấn Anh <ubolonton@gmail.com>",
   "repository": {
@@ -20,8 +29,14 @@
     "email": "ubolonton@gmail.com",
     "url": "https://github.com/ubolonton/js-csp/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel-runtime": "^6.11.6"
+  },
   "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.13.2",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babelify": "^7.3.0",
     "browserify": "^6.0.2",
     "chai": "~1.9.0",
     "gulp": "^3.8.10",
@@ -37,8 +52,11 @@
     "test": "node --harmony ./node_modules/.bin/gulp test",
     "bundle": "node ./node_modules/.bin/gulp bundle"
   },
-  "main": "./src/csp.js",
+  "main": "./dist/csp.js",
   "files": [
-    "src", "README.md", "CHANGELOG.md", "LICENSE"
+    "src",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
   ]
 }
